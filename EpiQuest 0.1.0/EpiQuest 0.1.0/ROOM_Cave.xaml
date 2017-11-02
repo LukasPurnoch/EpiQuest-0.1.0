@@ -1,0 +1,49 @@
+﻿<Page x:Class="EpiQuest_0._1._0.ROOM_Cave"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EpiQuest_0._1._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="EpiQuest" MinHeight="730" MinWidth="1280" Width="Auto" Height="Auto">
+
+    <Grid Margin="0,2,0,-2">
+        <Grid.Background>
+            <ImageBrush x:Name="Background" ImageSource="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Places\Forest.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <Image Margin="118,183,0,0" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Main_Character.png" Stretch="Fill" Width="338" HorizontalAlignment="Left" VerticalAlignment="Top" Height="258"/>
+
+        <Image x:Name="Enemy1" Margin="0,119,386,289" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Death_Flower.png" HorizontalAlignment="Right" Width="286"/>
+        <Image x:Name="Enemy2" Margin="0,119,10,289" Source="Enemy_Human_Tezkoodenec.png" HorizontalAlignment="Right" Width="325" Height="Auto"/>
+
+        <Image Margin="10,0,0,0" Source="Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="610" Height="266"/>
+        <Image Margin="0,0,10,0" Source="Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="610" Height="266"/>
+
+        <Image Margin="79,464,1054,107" Source="Thief_Miniature_CHARACTER.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="147" Height="144"/>
+
+        <Label x:Name="CurrentHP" Content="280" Margin="69,635,1143,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label x:Name="MaxHP" Content=" / 280" Margin="118,635,1064,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+        <Button x:Name="Silny_utok" Content="SILNÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,164" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White" Click="Silny_utok_Click"/>
+        <Button x:Name="Rychly_utok" Content="RYCHLÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,95" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White" Click="Rychly_utok_Click"/>
+        <Button x:Name="Normalni_utok" Content="NORMÁLNÍ" HorizontalAlignment="Left" Margin="309,0,0,26" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White" Click="Normalni_utok_Click"/>
+
+        <Image x:Name="EnemyPositionM1" Margin="0,0,395,122" Source="Enemy_Human_Lupic_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image x:Name="EnemyPositionM2" Margin="0,0,98,122" Source="Enemy_Human_Tezkoodenec_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label x:Name="CurrentHPEnemy1" Content="60" Margin="0,0,476,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Label x:Name="MaxHPEnemy1" Content=" / 60" Margin="0,0,395,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Label x:Name="CurrentHPEnemy2" Content="100" Margin="0,0,193,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Label x:Name="MaxHPEnemy2" Content=" / 100" Margin="0,0,98,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+
+        <Button x:Name="Enemy1Attack" Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,386,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White" Click="Enemy1Attack_Click"/>
+        <Button x:Name="Enemy2Attack" Content="ÚTOK" HorizontalAlignment="Right" Margin="0,0,98,26" VerticalAlignment="Bottom" Width="136" Height="35" Background="#DD363636" BorderBrush="White" Click="Enemy2Attack_Click"/>
+
+        <Label x:Name="DMGInfo_Thief" Content="" FontSize="72" FontFamily="Bernard MT Condensed" Margin="96,26,0,0" HorizontalAlignment="Left" Width="221" Foreground="#DDC30D0D" Height="88" VerticalAlignment="Top"/>
+        <Label x:Name="DMGInfo_Pos1" Content="" FontSize="72" FontFamily="Bernard MT Condensed" Margin="0,26,399,0" HorizontalAlignment="Right" Width="221" Foreground="#DDC30D0D" Height="88" VerticalAlignment="Top"/>
+        <Label x:Name="DMGInfo_Pos2" Content="" FontSize="72" FontFamily="Bernard MT Condensed" Margin="0,26,63,0" HorizontalAlignment="Right" Width="221" Foreground="#DDC30D0D" Height="88" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
