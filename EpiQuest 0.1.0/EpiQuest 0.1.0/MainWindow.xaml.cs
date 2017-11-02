@@ -24,5 +24,20 @@ namespace EpiQuest_0._1._0
         {
             InitializeComponent();
         }
+
+        private void NovaHra(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NacistHru(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UkoncitHru(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EpiQuest_0._1._0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="EpiQuest" Height="730" Width="1280" Icon="Assets/EQ_Icon.ico" >
+
+    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/EpiQuest_MenuBG.jpg"/>
+        </Grid.Background>
+        <Button x:Name="NewGame" Content="NEW GAME" Margin="0,0,0,193" Width="407" Height="60" Click="NovaHra" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Background="Black" Foreground="White"/>
+        <Button x:Name="LoadGame" Content="LOAD GAME" Margin="0,0,0,128" Width="407" Background="Black" Height="60" Click="NacistHru" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Foreground="White"/>
+        <Button x:Name="QuitGame" Content="EXIT" Margin="0,0,0,63" Width="407" Background="Black" Height="60" Click="UkoncitHru" FontWeight="Bold" FontSize="48" FontFamily="Georgia" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" Foreground="White"/>
+
+        <Frame x:Name="MENU1"/>
+        <Frame x:Name="MENU2"/>
+
     </Grid>
 </Window>
