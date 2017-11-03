@@ -13,15 +13,15 @@
             <ImageBrush x:Name="Background" ImageSource="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Places\Forest.png" Stretch="Fill"/>
         </Grid.Background>
 
-        <Image Margin="118,183,0,0" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Main_Character.png" Stretch="Fill" Width="338" HorizontalAlignment="Left" VerticalAlignment="Top" Height="258"/>
+        <Image Margin="96,177,0,291" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Main_Character.png" Stretch="Fill" Width="343" HorizontalAlignment="Left" Height="262"/>
 
-        <Image x:Name="Enemy1" Margin="0,119,386,289" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Death_Flower.png" HorizontalAlignment="Right" Width="286"/>
-        <Image x:Name="Enemy2" Margin="0,119,10,289" Source="Enemy_Human_Tezkoodenec.png" HorizontalAlignment="Right" Width="325" Height="Auto"/>
+        <Image x:Name="Enemy1" Margin="0,114,365,291" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Death_Flower.png" HorizontalAlignment="Right" Width="328" RenderTransformOrigin="0.5,0.5" Height="325"/>
+        <Image x:Name="Enemy2" Margin="0,114,32,291" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Blood_Flower.png" HorizontalAlignment="Right" Width="328" Height="325"/>
 
-        <Image Margin="10,0,0,0" Source="Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="610" Height="266"/>
-        <Image Margin="0,0,10,0" Source="Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="610" Height="266"/>
+        <Image Margin="10,0,0,0" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Textures\Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="610" Height="266"/>
+        <Image Margin="0,0,10,0" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Textures\Stone_texture.jpg" Stretch="Fill" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="610" Height="266"/>
 
-        <Image Margin="79,464,1054,107" Source="Thief_Miniature_CHARACTER.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="147" Height="144"/>
+        <Image Margin="79,464,1054,107" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Main_Character.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="147" Height="144"/>
 
         <Label x:Name="CurrentHP" Content="280" Margin="69,635,1143,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
         <Label x:Name="MaxHP" Content=" / 280" Margin="118,635,1064,28" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
@@ -30,11 +30,11 @@
         <Button x:Name="Rychly_utok" Content="RYCHLÝ ÚTOK" HorizontalAlignment="Left" Margin="309,0,0,95" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White" Click="Rychly_utok_Click"/>
         <Button x:Name="Normalni_utok" Content="NORMÁLNÍ" HorizontalAlignment="Left" Margin="309,0,0,26" VerticalAlignment="Bottom" Width="245" Height="64" Background="#DD363636" BorderBrush="White" Click="Normalni_utok_Click"/>
 
-        <Image x:Name="EnemyPositionM1" Margin="0,0,395,122" Source="Enemy_Human_Lupic_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <Image x:Name="EnemyPositionM2" Margin="0,0,98,122" Source="Enemy_Human_Tezkoodenec_Miniature.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image x:Name="EnemyPositionM1" Margin="0,0,395,122" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Death_Flower.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image x:Name="EnemyPositionM2" Margin="0,0,98,122" Source="C:\Users\Kiro\Source\Repos\EpiQuest-0.1.0\EpiQuest 0.1.0\EpiQuest 0.1.0\Assets\Characters\Blood_Flower.png" Stretch="Fill" Width="127" Height="117" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
 
-        <Label x:Name="CurrentHPEnemy1" Content="60" Margin="0,0,476,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
-        <Label x:Name="MaxHPEnemy1" Content=" / 60" Margin="0,0,395,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Label x:Name="CurrentHPEnemy1" Content="100" Margin="0,0,476,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Label x:Name="MaxHPEnemy1" Content=" / 100" Margin="0,0,395,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Label x:Name="CurrentHPEnemy2" Content="100" Margin="0,0,193,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Label x:Name="MaxHPEnemy2" Content=" / 100" Margin="0,0,98,64" Background="#00000000" Foreground="#DDFFFFFF" FontSize="36" FontFamily="Bernard MT Condensed" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
 

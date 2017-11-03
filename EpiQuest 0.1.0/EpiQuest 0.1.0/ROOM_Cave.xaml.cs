@@ -23,6 +23,34 @@ namespace EpiQuest_0._1._0
         public ROOM_Cave()
         {
             InitializeComponent();
+
+            Attacks_1 attack1 = new Attacks_1();
+            CaveType cavetype = new CaveType();
+        }
+
+        private void Silny_utok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Rychly_utok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Normalni_utok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Enemy1Attack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Enemy2Attack_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

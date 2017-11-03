@@ -60,6 +60,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Attacks_1.cs" />
+    <Compile Include="CaveType.cs" />
     <Compile Include="ROOM_Cave.xaml.cs">
       <DependentUpon>ROOM_Cave.xaml</DependentUpon>
     </Compile>
@@ -113,9 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Main_Character.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

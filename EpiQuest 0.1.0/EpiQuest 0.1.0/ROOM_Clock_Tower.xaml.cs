@@ -43,7 +43,7 @@ namespace EpiQuest_0._1._0
         }
         private void CTNBT3_Click(object sender, RoutedEventArgs e)
         {
-            //STORY.Content = new ROOM_Cave();
+            STORY.Content = new ROOM_Cave();
         }
     }
 }
