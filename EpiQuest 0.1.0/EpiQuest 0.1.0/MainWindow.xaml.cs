@@ -32,7 +32,7 @@ namespace EpiQuest_0._1._0
 
         private void NacistHru(object sender, RoutedEventArgs e)
         {
-
+            MENU2.Content = new ROOM_Cave();
         }
 
         private void UkoncitHru(object sender, RoutedEventArgs e)

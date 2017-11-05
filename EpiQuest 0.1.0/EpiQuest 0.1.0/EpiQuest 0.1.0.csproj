@@ -60,8 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Attacks_1.cs" />
+    <Compile Include="Attacks.cs" />
     <Compile Include="CaveType.cs" />
+    <Compile Include="Enemy_Attacks.cs" />
+    <Compile Include="Enemy_Selection.cs" />
     <Compile Include="ROOM_Cave.xaml.cs">
       <DependentUpon>ROOM_Cave.xaml</DependentUpon>
     </Compile>
