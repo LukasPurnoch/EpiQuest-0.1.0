@@ -41,7 +41,10 @@ namespace EpiQuest_0._1._0
             Enemy_Attacks eattack = new Enemy_Attacks(); 
 
             attack.Silny_Utok(CurrentHPEnemy1, CurrentHPEnemy2, DMGInfo_Pos1, DMGInfo_Pos2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, EnemySelectt);
-            
+
+            eattack.Normalni_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
+            eattack.Silny_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
+            eattack.Rychly_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
         }
 
         private void Rychly_utok_Click(object sender, RoutedEventArgs e)
@@ -53,14 +56,18 @@ namespace EpiQuest_0._1._0
 
             eattack.Normalni_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
             eattack.Silny_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
-            eattack.Rychly_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
+            eattack.Rychly_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
         }
 
         private void Normalni_utok_Click(object sender, RoutedEventArgs e)
         {
             Attacks attack = new Attacks();
+            Enemy_Attacks eattack = new Enemy_Attacks();
             attack.Normalni_Utok(CurrentHPEnemy1, CurrentHPEnemy2, DMGInfo_Pos1, DMGInfo_Pos2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, EnemySelectt);
 
+            eattack.Normalni_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
+            eattack.Silny_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack);
+            eattack.Rychly_Utok_E(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
         }
 
         private void Enemy1Attack_Click(object sender, RoutedEventArgs e)
