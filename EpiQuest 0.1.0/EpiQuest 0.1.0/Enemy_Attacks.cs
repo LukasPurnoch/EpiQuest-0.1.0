@@ -63,7 +63,7 @@ namespace EpiQuest_0._1._0
                         CurrentHPEnemy2.Visibility = Visibility.Hidden;
                         MaxHPEnemy2.Visibility = Visibility.Hidden;
                         Enemy2Attack.Visibility = Visibility.Hidden;
-                        DMGInfo_Pos2.Visibility = Visibility.Hidden;
+                        DMGInfo_Pos2.Visibility = Visibility.Hidden; 
                     }
                 }
 
