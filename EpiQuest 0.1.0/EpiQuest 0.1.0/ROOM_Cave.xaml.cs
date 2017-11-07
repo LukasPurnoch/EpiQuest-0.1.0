@@ -54,9 +54,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                if (int.TryParse(CurrentHPEnemy1.Content.ToString(), out int E1HP))
                 {
-                    if (E1HP <= 0)
+                    if (E1HP < 0)
                     {
                         EnemyCount += 1;
                     }
@@ -72,9 +72,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                if (int.TryParse(CurrentHPEnemy2.Content.ToString(), out int E2HP))
                 {
-                    if (E2HP <= 0)
+                    if (E2HP < 0)
                     {
                         EnemyCount += 1;
                     }
@@ -102,9 +102,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                if (int.TryParse(CurrentHPEnemy1.Content.ToString(), out int E1HP))
                 {
-                    if (E1HP <= 0)
+                    if (E1HP < 0)
                     {
                         EnemyCount += 1;
                     }
@@ -120,9 +120,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                if (int.TryParse(CurrentHPEnemy2.Content.ToString(), out int E2HP))
                 {
-                    if (E2HP <= 0)
+                    if (E2HP < 0)
                     {
                         EnemyCount += 1;
                     }
@@ -147,9 +147,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                if (int.TryParse(CurrentHPEnemy1.Content.ToString(), out int E1HP))
                 {
-                    if (E1HP <= 0)
+                    if (E1HP < 0)
                     {
                         EnemyCount += 1;
                     }
@@ -165,9 +165,9 @@ namespace EpiQuest_0._1._0
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
 
-                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                if (int.TryParse(CurrentHPEnemy2.Content.ToString(), out int E2HP))
                 {
-                    if (E2HP <= 0)
+                    if (E2HP < 0)
                     {
                         EnemyCount += 1;
                     }
