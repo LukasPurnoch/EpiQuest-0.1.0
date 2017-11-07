@@ -423,7 +423,7 @@ namespace EpiQuest_0._1._0
                 }
                 if (enemytype2 == 4)
                 {
-                    Enemy2.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Black_Knigh.png"));
+                    Enemy2.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Black_Knight.png"));
                     EnemyPositionM2.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Black_Knight.png"));
 
                     CurrentHPEnemy2.Content = 55;
