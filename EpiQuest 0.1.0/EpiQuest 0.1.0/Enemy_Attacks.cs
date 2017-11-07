@@ -17,7 +17,7 @@ namespace EpiQuest_0._1._0
 {
     class Enemy_Attacks : Enemy_Selection
     {
-        public int EnmCount;
+        public int EnmCount = 0;
 
         public void Rychly_Utok_E1(Label CurrentHP, Label DMGInfo_Thief, Image Enemy1, Image Enemy2, Image EnemyPositionM1, Image EnemyPositionM2, Label CurrentHPEnemy1, Label CurrentHPEnemy2, Label MaxHPEnemy1, Label MaxHPEnemy2, Button Enemy1Attack, Button Enemy2Attack, Label DMGInfo_Pos1, Label DMGInfo_Pos2)
         {

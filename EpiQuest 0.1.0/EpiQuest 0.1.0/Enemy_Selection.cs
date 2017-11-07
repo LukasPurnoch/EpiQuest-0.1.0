@@ -132,7 +132,7 @@ namespace EpiQuest_0._1._0
                 if (enemytype1 == 2)
                 {
                     Enemy1.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Lilith.png"));
-                    EnemyPositionM2.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Lilith.png"));
+                    EnemyPositionM1.Source = new BitmapImage(new Uri("C:/Users/Kiro/Source/Repos/EpiQuest-0.1.0/EpiQuest 0.1.0/EpiQuest 0.1.0/Assets/Characters/Lilith.png"));
 
                     CurrentHPEnemy1.Content = 45;
                     MaxHPEnemy1.Content = "/ 45";

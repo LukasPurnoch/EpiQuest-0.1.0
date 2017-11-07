@@ -21,12 +21,13 @@ namespace EpiQuest_0._1._0
     public partial class ROOM_Cave : Page
     {
         public int EnemySelectt = 0;
+        public int EnemyCount;
 
         public ROOM_Cave()
         {
             InitializeComponent();
-
-            LEVEL();            
+            
+            LEVEL();
         }
 
         public void LEVEL()
@@ -35,17 +36,9 @@ namespace EpiQuest_0._1._0
             CaveType cavetype = new CaveType();
             Enemy_Selection enemy_selection = new Enemy_Selection();
 
-            Enemy_Attacks points = new Enemy_Attacks();
-            int EnemyCount = points.EnmCount; 
-
             attack.SkrytUtoky(Silny_utok, Rychly_utok, Normalni_utok);
             cavetype.RandomCaveType(Background);
             enemy_selection.EnemySelect(Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, MaxHPEnemy1, CurrentHPEnemy2, MaxHPEnemy2);
-
-            if (EnemyCount >= 2)
-            {
-                LEVEL();
-            }
         }
 
         private void Silny_utok_Click(object sender, RoutedEventArgs e)
@@ -60,13 +53,40 @@ namespace EpiQuest_0._1._0
                 eattack.Rychly_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                {
+                    if (E1HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E1HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
             else
             {
                 eattack.Rychly_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                {
+                    if (E2HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E2HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
+            Enemy_Attacks counter = new Enemy_Attacks();
+            EnemyCount = counter.EnmCount;
+
         }
 
         private void Rychly_utok_Click(object sender, RoutedEventArgs e)
@@ -81,12 +101,36 @@ namespace EpiQuest_0._1._0
                 eattack.Rychly_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                {
+                    if (E1HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E1HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
             else
             {
                 eattack.Rychly_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                {
+                    if (E2HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E2HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
         }
 
@@ -102,14 +146,43 @@ namespace EpiQuest_0._1._0
                 eattack.Rychly_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E1(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy1.Content.ToString(), out int E1HP))
+                {
+                    if (E1HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E1HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
             else
             {
                 eattack.Rychly_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Silny_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
                 eattack.Normalni_Utok_E2(CurrentHP, DMGInfo_Thief, Enemy1, Enemy2, EnemyPositionM1, EnemyPositionM2, CurrentHPEnemy1, CurrentHPEnemy2, MaxHPEnemy1, MaxHPEnemy2, Enemy1Attack, Enemy2Attack, DMGInfo_Pos1, DMGInfo_Pos2);
+
+                if (int.TryParse(MaxHPEnemy2.Content.ToString(), out int E2HP))
+                {
+                    if (E2HP <= 0)
+                    {
+                        EnemyCount += 1;
+                    }
+                    if (E2HP >= 2)
+                    {
+                        LEVEL();
+                    }
+                }
             }
         }
+
+
+
+
+
 
         private void Enemy1Attack_Click(object sender, RoutedEventArgs e)
         {
