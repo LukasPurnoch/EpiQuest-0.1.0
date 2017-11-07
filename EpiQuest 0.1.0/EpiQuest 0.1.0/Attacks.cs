@@ -77,7 +77,7 @@ namespace EpiQuest_0._1._0
             }
         }
 
-        public void Silny_Utok(Label CurrentHPEnemy1, Label CurrentHPEnemy2, Label DMGInfo_Pos1, Label DMGInfo_Pos2, Label MaxHPEnemy1, Label MaxHPEnemy2, Button Enemy1Attack, Button Enemy2Attack, Image Enemy1, Image Enemy2, Image EnemyPositionM1, Image EnemyPositionM2, int FinalEnemySelect)
+        public void Silny_Utok(Label CurrentHPEnemy1, Label CurrentHPEnemy2, Label DMGInfo_Pos1, Label DMGInfo_Pos2, int FinalEnemySelect)
         {
             Random SilnyUtok_HitChance = new Random(); // Strong attack -> 30% Chance
             Random SilnyUtok_DMG = new Random(); // 25 - 30 DMG
@@ -121,7 +121,7 @@ namespace EpiQuest_0._1._0
             }
         }
 
-        public void Normalni_Utok(Label CurrentHPEnemy1, Label CurrentHPEnemy2, Label DMGInfo_Pos1, Label DMGInfo_Pos2, Label MaxHPEnemy1, Label MaxHPEnemy2, Button Enemy1Attack, Button Enemy2Attack, Image Enemy1, Image Enemy2, Image EnemyPositionM1, Image EnemyPositionM2, int FinalEnemySelect)
+        public void Normalni_Utok(Label CurrentHPEnemy1, Label CurrentHPEnemy2, Label DMGInfo_Pos1, Label DMGInfo_Pos2, int FinalEnemySelect)
         {
             Random NormalniUtok_HitChance = new Random(); // Normaln attack -> 60% Chance
             Random NormalniUtok_DMG = new Random(); // 14 - 19 DMG

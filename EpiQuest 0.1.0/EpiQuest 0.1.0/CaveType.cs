@@ -22,7 +22,7 @@ namespace EpiQuest_0._1._0
         public void RandomCaveType(ImageBrush Background)
         {
             Random cave = new Random();
-            cavetyp = cave.Next(1, 2); //6
+            cavetyp = cave.Next(1, 6); //6
 
             if (cavetyp == 1)
             {
